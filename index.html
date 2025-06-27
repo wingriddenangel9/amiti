@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מילה יומית - תשלוט בתקשורת</title>
+  <title>מילה יומית - שלוט בתקשורת</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
@@ -71,6 +71,18 @@
       background: rgba(255, 0, 0, 0.7);
       z-index: -1;
       transform: rotate(-2deg);
+      filter: blur(2px) brightness(150%) saturate(200%) drop-shadow(0 0 6px red);
+      border-radius: 2px;
+      animation: glow 1.6s infinite ease-in-out alternate;
+    }
+
+    @keyframes glow {
+      from {
+        filter: blur(2px) brightness(150%) saturate(200%) drop-shadow(0 0 6px red);
+      }
+      to {
+        filter: blur(3px) brightness(180%) saturate(300%) drop-shadow(0 0 10px red);
+      }
     }
 
     .intro {
@@ -133,7 +145,7 @@
 <body>
   <header>
     <h1>מילה יומית</h1>
-    <p>תשלוט במילים. תשלוט <mark>במציאות</mark>.</p>
+    <p>שלוט במילים. שלוט ב<mark>מציאות</mark>.</p>
   </header>
 
   <section class="intro">
